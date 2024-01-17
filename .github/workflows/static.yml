@@ -26,9 +26,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install DocFX
-        run: choco install -y docfx
-
       - name: Build Document
         run: docfx Documentation~/docfx.json
 
