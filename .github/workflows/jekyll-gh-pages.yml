@@ -32,7 +32,7 @@ jobs:
         shell: cmd
         run: |
           choco install docfx -y
-          docfx docfx\markdown\docfx.json
+          docfx markdown\docfx.json
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
