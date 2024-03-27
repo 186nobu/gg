@@ -34,10 +34,12 @@ jobs:
           choco install docfx -y
           docfx markdown\docfx.json
           
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      - uses: actions/upload-artifact@v3
         with:
           name: dotnet_doc
+          path: manual
+      - uses: actions/upload-pages-artifact@v1
+        with:
           path: manual
           
 
